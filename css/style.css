@@ -1,14 +1,17 @@
 * { box-sizing: border-box; }
 
 :root {
-  --bg: #f0f7ff;       
-  --text: #0f172a;      
-  --muted: #475569;     
-  --brand-1: #2563eb;   
-  --brand-2:#1d4ed8;   
-  --card: #ffffff;
-  --border: #dbeafe;
+  --bg: #eef6ff;        
+  --text: #0b1220;     
+  --muted: #334155;    
+
+  --brand-1: #3b82f6;   
+  --brand-2: #2563eb;   
+
+  --card: #ffffff;     
+  --border: #c7d2fe;   
 }
+
 
 
 
@@ -196,5 +199,88 @@ button:hover {
   .grid-2 { grid-template-columns: 1fr; }
   .nav-list { flex-direction: column; }
   .header-inner { flex-direction: column; align-items: flex-start; }
+}
+.nav-link[aria-current="page"] {
+  background: rgba(255,255,255,0.25);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  background: var(--brand-1);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border: 0;
+}
+
+.btn:hover { opacity: 0.92; }
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--brand-1);
+  color: var(--brand-1);
+}
+
+.btn-outline:hover {
+  background: rgba(59,130,246,0.10);
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hero h2 {
+  margin-top: 0;
+  font-size: 1.6rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.stat {
+  background: rgba(255,255,255,0.75);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 0.85rem;
+}
+
+.stat-number {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.stat-label {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+@media (max-width: 700px) {
+  .grid-2 { grid-template-columns: 1fr; }
+  .nav-list { flex-direction: column; }
+  .header-inner { flex-direction: column; align-items: flex-start; }
+  .hero { grid-template-columns: 1fr; }
+}
+.form {
+  display: grid;
+  gap: 0.35rem;
+}
+
+input:focus, textarea:focus {
+  outline: 3px solid rgba(59,130,246,0.25);
+  border-color: var(--brand-1);
 }
 
