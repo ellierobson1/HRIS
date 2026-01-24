@@ -1,58 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HRIS | Profile</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HRIS | Profile</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div>
+        <h1>Human Resource Information System</h1>
+        <p class="subtitle">Sample profile / report summary</p>
+      </div>
+    </div>
+  </header>
 
-<header>
-    <h1>Human Resource Information System</h1>
-</header>
-
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="info.html">HR Information</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
-
-<main class="container">
-  <section class="card">
-    <h2>Employee Profile Summary</h2>
-    <p>This static profile demonstrates how an HRIS can summarise key employee information.</p>
-  </section>
-
-  <section class="card grid-2">
-    <div>
-      <h3>Employee Details</h3>
-      <ul>
-        <li><strong>Name:</strong> Ellie Robson</li>
-        <li><strong>Role:</strong> HR Assistant</li>
-        <li><strong>Department:</strong> Human Resources</li>
-        <li><strong>Employment Type:</strong> Full-time</li>
+  <nav class="site-nav" aria-label="Primary">
+    <div class="container">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="info.html">HR Information</a></li>
+        <li><a class="nav-link" href="profile.html" aria-current="page">Profile</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
     </div>
-    <div>
-      <h3>Training & Skills</h3>
-      <ul>
-        <li>HR onboarding procedures</li>
-        <li>Data protection awareness</li>
-        <li>Communication and support</li>
-        <li>Basic reporting and record keeping</li>
-      </ul>
+  </nav>
+
+  <main class="container">
+    <section class="card">
+      <h2>Employee Profile Summary</h2>
+      <p>
+        This page demonstrates how an HRIS can present summarised employee information to support understanding and
+        decision-making (e.g., reporting, management oversight, and HR administration).
+      </p>
+    </section>
+
+    <section class="grid-2">
+      <section class="card">
+        <h3>Employee Details</h3>
+        <ul class="detail-list">
+          <li><span class="label">Name</span><span class="value">Ellie Robson</span></li>
+          <li><span class="label">Role</span><span class="value">HR Assistant</span></li>
+          <li><span class="label">Department</span><span class="value">Human Resources</span></li>
+          <li><span class="label">Employment Type</span><span class="value">Full-time</span></li>
+          <li><span class="label">Status</span><span class="value">Active</span></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>Skills &amp; Training</h3>
+        <ul>
+          <li>HR onboarding procedures</li>
+          <li>Data protection awareness</li>
+          <li>Employee support and communication</li>
+          <li>Basic reporting and record keeping</li>
+        </ul>
+        <p class="muted">Note: All information shown is sample data for a static interface demonstration.</p>
+      </section>
+    </section>
+
+    <section class="card">
+      <h2>Summary</h2>
+      <p>
+        Presenting structured profile information in a consistent layout improves clarity for users and supports core
+        HR processes such as training tracking, role overview, and administrative reporting.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 HRIS — Profile Summary</p>
     </div>
-  </section>
-</main>
-
-
-<footer>
-    <p>&copy; 2026 HRIS</p>
-</footer>
-
+  </footer>
 </body>
 </html>
+

@@ -1,60 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HRIS | Home</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HRIS | Home</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div>
+        <h1>Human Resource Information System</h1>
+        <p class="subtitle">Internal HR portal for policies, benefits, training, and support</p>
+      </div>
+    </div>
+  </header>
 
-<header>
-    <h1>Human Resource Information System</h1>
-</header>
-
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="info.html">HR Information</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
-
-<main class="container">
-  <section class="card">
-    <h2>System Overview</h2>
-    <p>
-      The Human Resource Information System (HRIS) provides employees and managers
-      with consistent access to HR policies, benefits information, training guidance,
-      and HR contact support through a web-based interface.
-    </p>
-  </section>
-
-  <section class="card grid-2">
-    <div>
-      <h2>Intended Users</h2>
-      <ul>
-        <li>Employees</li>
-        <li>Line Managers</li>
-        <li>Human Resources Staff</li>
+  <nav class="site-nav" aria-label="Primary">
+    <div class="container">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="index.html" aria-current="page">Home</a></li>
+        <li><a class="nav-link" href="info.html">HR Information</a></li>
+        <li><a class="nav-link" href="profile.html">Profile</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
     </div>
-    <div>
-      <h2>What You Can Do Here</h2>
-      <ul>
-        <li>Review HR policies and procedures</li>
-        <li>Understand benefits and leave entitlement</li>
-        <li>View an employee profile summary</li>
-        <li>Contact HR for support</li>
+  </nav>
+
+  <main class="container">
+    <section class="card">
+      <h2>System Overview</h2>
+      <p>
+        The Human Resource Information System (HRIS) is a web-based Business Information System interface designed
+        to provide employees and managers with clear access to essential HR information. This includes HR policies,
+        benefits and leave guidance, training and development information, and contact support.
+      </p>
+    </section>
+
+    <section class="grid-2">
+      <section class="card">
+        <h2>Intended Users</h2>
+        <ul>
+          <li>Employees</li>
+          <li>Line Managers</li>
+          <li>HR Staff</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>What You Can Do Here</h2>
+        <ul>
+          <li>Read key HR policies and procedures</li>
+          <li>Review benefits and leave entitlement</li>
+          <li>View a sample employee profile summary</li>
+          <li>Submit a general HR enquiry via the contact form</li>
+        </ul>
+      </section>
+    </section>
+
+    <section class="card">
+      <h2>Quick Links</h2>
+      <p class="muted">Use the navigation above, or jump to a page:</p>
+      <ul class="quick-links">
+        <li><a href="info.html">HR Information: Policies, benefits, and training</a></li>
+        <li><a href="profile.html">Profile: Example employee summary</a></li>
+        <li><a href="contact.html">Contact: Submit a HR enquiry form</a></li>
       </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 HRIS — Static demonstration interface (HTML &amp; CSS only)</p>
     </div>
-  </section>
-</main>
-
-<footer>
-    <p>&copy; 2026 HRIS</p>
-</footer>
-
+  </footer>
 </body>
 </html>
