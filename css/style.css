@@ -1,14 +1,16 @@
 * { box-sizing: border-box; }
 
 :root {
-  --bg: #f6f7fb;
-  --text: #1f2937;
-  --muted: #6b7280;
-  --brand-1: #0f2a43;
-  --brand-2: #12395b;
+  --bg: #f0f7ff;       
+  --text: #0f172a;      
+  --muted: #475569;     
+  --brand-1: #2563eb;   
+  --brand-2:#1d4ed8;   
   --card: #ffffff;
-  --border: #e5e7eb;
+  --border: #dbeafe;
 }
+
+
 
 body {
   margin: 0;
