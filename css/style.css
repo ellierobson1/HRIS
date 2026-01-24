@@ -459,3 +459,28 @@ header.site-header .auth-btn {
 header.site-header .auth-btn:hover {
   background: rgba(255,255,255,0.15) !important;
 }
+/* Lock header typography so it is consistent on all pages */
+.site-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.site-header .subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0.25rem 0 0;
+}
+/* Force identical header typography on every page */
+.site-header h1 {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  margin: 0 !important;
+  line-height: 1.2 !important;
+}
+
+.site-header .subtitle {
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  margin: 0.25rem 0 0 !important;
+}
