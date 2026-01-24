@@ -356,3 +356,35 @@ select {
 .breadcrumbs a:hover {
   text-decoration: underline;
 }
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auth-actions {
+  display: flex;
+  align-items: center;
+}
+/* Header auth (top-right) */
+.site-header .auth-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Make the name readable on blue header */
+.site-header .auth-actions .muted {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Make outline button visible on blue header */
+.site-header .btn-outline {
+  border-color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.95);
+  background: transparent;
+}
+
+.site-header .btn-outline:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
