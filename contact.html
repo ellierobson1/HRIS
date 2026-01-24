@@ -4,25 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HRIS | Contact</title>
-  <link rel="stylesheet" href="css/style.css?v=1002">
+  <link rel="stylesheet" href="css/style.css?v=4000">
 </head>
 
+<body>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <div class="header-left">
-      <h1>Human Resource Information System</h1>
-      <p class="subtitle">Internal HR portal for policies, benefits, training, and support</p>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="header-left">
+        <h1>Human Resource Information System</h1>
+        <p class="subtitle">Internal HR portal for policies, benefits, training, and support</p>
+      </div>
+
+      <div class="auth-actions">
+        <span class="user-name">Ellie Robson</span>
+        <a class="auth-btn" href="#">Log out</a>
+      </div>
     </div>
+  </header>
 
-    <div class="auth-actions">
-      <span class="user-name">Alex Morgan</span>
-      <a class="auth-btn" href="#">Log out</a>
-    </div>
-  </div>
-</header>
-
-
+  <!-- NAVIGATION -->
   <nav class="site-nav" aria-label="Primary">
     <div class="container">
       <ul class="nav-list">
@@ -34,11 +36,15 @@
     </div>
   </nav>
 
-  <main class="container" id="content">
+  <!-- MAIN CONTENT -->
+  <main class="container">
+
+    <!-- BREADCRUMBS -->
     <nav class="breadcrumbs" aria-label="Breadcrumb">
       <a href="index.html">Home</a> / <span>Contact</span>
     </nav>
 
+    <!-- CONTACT FORM -->
     <section class="card">
       <h2>Contact HR</h2>
       <p class="muted">
@@ -69,6 +75,7 @@
       </form>
     </section>
 
+    <!-- FAQ -->
     <section class="card">
       <h2>FAQs</h2>
 
@@ -79,7 +86,7 @@
 
       <details class="faq">
         <summary>Where do I find annual leave information?</summary>
-        <p>Go to HR Information and check the Annual Leave policy section.</p>
+        <p>Go to the HR Information page and check the Annual Leave section.</p>
       </details>
 
       <details class="faq">
@@ -88,6 +95,7 @@
       </details>
     </section>
 
+    <!-- CONTACT DETAILS -->
     <section class="card">
       <h2>HR Contact Details</h2>
       <ul>
@@ -98,12 +106,15 @@
 
       <p class="muted"><small>Last updated: 24 January 2026</small></p>
     </section>
+
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
       <p>&copy; 2026 HRIS — Contact</p>
     </div>
   </footer>
+
 </body>
 </html>
