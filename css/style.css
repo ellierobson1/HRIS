@@ -388,3 +388,74 @@ select {
 .site-header .btn-outline:hover {
   background: rgba(255, 255, 255, 0.15);
 }
+/* Guaranteed header layout + visible auth button */
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.header-left {
+  min-width: 0;
+}
+
+.auth-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  white-space: nowrap;
+}
+
+.user-name {
+  color: rgba(255,255,255,0.92);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.auth-btn {
+  display: inline-block;
+  padding: 0.55rem 0.85rem;
+  border-radius: 12px;
+  border: 2px solid rgba(255,255,255,0.9);
+  color: rgba(255,255,255,0.95);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.auth-btn:hover {
+  background: rgba(255,255,255,0.15);
+}
+/* Force header layout + auth visibility (override) */
+header.site-header .header-inner {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 1rem !important;
+}
+
+header.site-header .auth-actions {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.75rem !important;
+  white-space: nowrap !important;
+}
+
+header.site-header .user-name {
+  color: rgba(255,255,255,0.92) !important;
+  font-weight: 600 !important;
+}
+
+header.site-header .auth-btn {
+  display: inline-block !important;
+  padding: 0.55rem 0.85rem !important;
+  border-radius: 12px !important;
+  border: 2px solid rgba(255,255,255,0.9) !important;
+  color: rgba(255,255,255,0.95) !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+}
+
+header.site-header .auth-btn:hover {
+  background: rgba(255,255,255,0.15) !important;
+}
