@@ -283,4 +283,35 @@ input:focus, textarea:focus {
   outline: 3px solid rgba(59,130,246,0.25);
   border-color: var(--brand-1);
 }
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .grid-3 { grid-template-columns: 1fr; }
+}
+
+.plain-list { margin: 0; padding-left: 1.1rem; }
+.action-list { list-style: none; padding: 0; margin: 0; }
+.link-row {
+  display: block;
+  padding: 0.7rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--text);
+  margin-top: 0.6rem;
+  background: rgba(255,255,255,0.7);
+}
+.link-row:hover { transform: translateY(-1px); }
+.card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.10);
+}
 
