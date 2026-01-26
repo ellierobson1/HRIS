@@ -484,3 +484,10 @@ header.site-header .auth-btn:hover {
   font-weight: 400 !important;
   margin: 0.25rem 0 0 !important;
 }
+/* === LOCK HEADER TITLE SIZE ACROSS ALL PAGES === */
+.site-header h1 {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  margin: 0 !important;
+}
