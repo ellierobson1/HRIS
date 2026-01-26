@@ -28,7 +28,7 @@
   <div class="container">
     <ul class="nav-list">
       <li><a class="nav-link" href="index.html">Home</a></li>
-      <li><a class="nav-link" href="info.html">Key Information</a></li>
+      <li><a class="nav-link" href="info.html">Knowledge Base</a></li>
       <li><a class="nav-link" href="profile.html" aria-current="page">Profile</a></li>
       <li><a class="nav-link" href="contact.html">Contact</a></li>
     </ul>
@@ -37,13 +37,19 @@
 
 <main class="container">
 
+    <section class="alert alert-warning">
+  <strong>Action required:</strong> You have mandatory training expiring within the next 14 days.
+  Please complete the required refresher to remain compliant.
+</section>
+
+
   <nav class="breadcrumbs" aria-label="Breadcrumb">
     <a href="index.html">Home</a> / <span>Profile</span>
   </nav>
 
   <section class="card">
     <h2>Employee Profile</h2>
-    <p class="muted">Overview of role, status, and training.</p>
+    <p class="muted">This section provides an overview of your role, areas of responsibility, and their qualifications relevant to your role.</p>
   </section>
 
   <section class="grid-2">
@@ -65,10 +71,51 @@
         <li>Data protection awareness</li>
         <li>Employee support and communication</li>
         <li>Basic reporting and record keeping</li>
+        <li>Employee profile management</li>
+        <li>Training Compliance</li>
+        <li>Data entry</li>
       </ul>
-      <p class="muted"><small>Sample data only.</small></p>
     </section>
   </section>
+
+  <section class="card">
+  <h3>Training Courses Status</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Course</th>
+        <th>Status</th>
+        <th>Due</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Data Protection</td>
+        <td><span class="status-pill">Completed</span></td>
+        <td>Jan 2026</td>
+      </tr>
+      <tr>
+        <td>Health &amp; Safety</td>
+        <td><span class="status-pill">Completed</span></td>
+        <td>Aug 2026</td>
+      </tr>
+      <tr>
+        <td>Equality &amp; Diversity</td>
+        <td><span class="status-pill">Due</span></td>
+        <td>Mar 2026</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<section class="card">
+  <h3>Leave Summary</h3>
+  <ul class="detail-list">
+    <li><span class="label">Entitlement</span><span class="value">25 days</span></li>
+    <li><span class="label">Taken</span><span class="value">10 days</span></li>
+    <li><span class="label">Remaining</span><span class="value">15 days</span></li>
+  </ul>
+</section>
+
 
 </main>
 

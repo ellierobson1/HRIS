@@ -352,3 +352,210 @@ select {
   padding: 0.6rem;
   font-size: 0.9rem;
 }
+/* Alerts */
+.alert {
+  padding: 1rem;
+  border-radius: 12px;
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+.alert-warning {
+  background: #fee2e2;          /* light red */
+  border: 2px solid #dc2626;    /* strong red */
+  color: #7f1d1d;
+}
+.form button{
+  margin-top: 1.25rem;
+  align-self: flex-start;
+  padding: 0.8rem 1.2rem;
+}
+.required{
+  margin-left: 0.2rem;
+}
+/* FAQ styling */
+.faq {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.6rem;
+  background: #fff;
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none; /* removes default triangle in some browsers */
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary::after {
+  content: "＋";
+  float: right;
+  font-weight: bold;
+}
+
+.faq[open] summary::after {
+  content: "−";
+}
+
+.faq p {
+  margin: 0.6rem 0 0;
+  color: var(--muted);
+}
+.page-intro{
+  border-left: 4px solid var(--brand-1);
+}
+.card h2{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.card[id]{
+  border-top: 3px solid var(--border);
+}
+.card ul{
+  margin-top: 0.5rem;
+}
+
+.card li{
+  line-height: 1.5;
+}
+.layout-side .plain-list a{
+  display: block;
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+}
+
+.layout-side .plain-list a:hover{
+  background: rgba(59,130,246,0.1);
+}
+.table-wrap table{
+  font-size: 0.95rem;
+}
+.page-intro{
+  border-left: 5px solid var(--brand-1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.page-intro .small{
+  color: var(--muted);
+  margin: 0;
+}
+.action-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.link-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text);
+  background: rgba(255,255,255,0.7);
+}
+
+.link-row:hover{
+  background: rgba(59,130,246,0.08);
+  border-color: rgba(59,130,246,0.35);
+}
+
+.link-row::after{
+  content: "→";
+  color: var(--muted);
+}
+@media (max-width: 1100px){
+  .grid-3{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px){
+  .grid-3{
+    grid-template-columns: 1fr;
+  }
+}
+.card h2{
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.card h3{
+  margin-top: 0;
+}
+/* Dashboard card header accent */
+.card h2{
+  margin: 0 0 0.65rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.card h2::before{
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 0.5rem;
+  border-radius: 3px;
+  background: var(--brand-1);
+  vertical-align: middle;
+}
+/* Cleaner list style inside cards */
+.card ul{
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.card li{
+  margin: 0.35rem 0;
+}
+/* Announcements look like system notices */
+.plain-list{
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+
+.plain-list li{
+  padding: 0.65rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.plain-list li:last-child{
+  border-bottom: 0;
+}
+.link-row{
+  transition: transform 0.12s ease, border-color 0.12s ease, background 0.12s ease;
+}
+
+.link-row:hover{
+  transform: translateY(-1px);
+}
+.grid-2, .grid-3{
+  margin-top: 1rem;
+}
+
+.card{
+  padding: 1.15rem;
+}
+.link-row{
+  font-weight: 600;
+  border-width: 1px;
+}
+
+.link-row:hover{
+  border-color: rgba(59,130,246,0.55);
+  background: rgba(59,130,246,0.10);
+}
