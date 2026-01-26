@@ -154,50 +154,6 @@ main {
   background: rgba(59,130,246,0.10);
 }
 
-/* HERO (optional section on home) */
-.hero {
-  display: grid;
-  grid-template-columns: 1.6fr 1fr;
-  gap: 1rem;
-  align-items: center;
-}
-
-.hero h2 {
-  margin-top: 0;
-  font-size: 1.6rem;
-}
-
-.hero-actions {
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-  margin-top: 0.75rem;
-}
-
-.hero-stats {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.75rem;
-}
-
-.stat {
-  background: rgba(255,255,255,0.75);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 0.85rem;
-}
-
-.stat-number {
-  display: block;
-  font-size: 1.4rem;
-  font-weight: 800;
-}
-
-.stat-label {
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
 /* TABLES */
 .table-wrap {
   overflow-x: auto;
@@ -278,7 +234,7 @@ button {
 
 button:hover { opacity: 0.9; }
 
-/* FOOTER */
+/* FOOTER */ 
 .site-footer {
   padding: 1rem 0;
   color: var(--muted);
@@ -313,7 +269,7 @@ button:hover { opacity: 0.9; }
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
   overflow: hidden; clip: rect(0,0,0,0); border: 0;
 }
-}
+
 .status-pill {
   padding: 0.35rem 0.7rem;
   border-radius: 999px;
@@ -336,3 +292,63 @@ select {
 }
 .breadcrumbs a { color: var(--brand-2); text-decoration: none; }
 .breadcrumbs a:hover { text-decoration: underline; }
+
+/* === AUTH HEADER (FINAL, MINIMAL) === */
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auth-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.auth-name {
+  color: rgba(255,255,255,0.9);
+  font-weight: 600;
+}
+
+.auth-btn {
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  border: 2px solid rgba(255,255,255,0.9);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.auth-btn:hover{
+  background: rgba(255,255,255,0.15);
+}
+.layout{
+  display:grid;
+  grid-template-columns: 1fr 320px;
+  gap: 1rem;
+  align-items:start;
+}
+@media (max-width: 900px){
+  .layout{ grid-template-columns: 1fr; }
+}
+.plain-list{ list-style:none; padding:0; margin:0; }
+.plain-list li{ padding:.4rem 0; border-bottom:1px solid var(--border); }
+.plain-list li:last-child{ border-bottom:0; }
+
+.layout{
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 1rem;
+  align-items: start;
+}
+
+@media (max-width: 900px){
+  .layout{ grid-template-columns: 1fr; }
+}
+
+/* Sidebar table spacing so it fits neatly */
+.layout-side table th,
+.layout-side table td{
+  padding: 0.6rem;
+  font-size: 0.9rem;
+}
