@@ -5,7 +5,8 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="home">
+
 
 <header class="site-header">
   <div class="container header-inner">
@@ -39,11 +40,73 @@
 
 <main class="container">
 <section class="card page-intro">
-  <h2>Welcome to HR system</h2>
-  <p class="muted">Policies, benefits and training guidance in one place.</p>
+  <h2>Welcome to the Human Resource System</h2>
+  <p class="muted">Policies, benefits and training guidance all in one place.</p>
   <p class="small">Last updated: 24 Jan 2026</p>
 </section>
 
+</section>
+<section class="card">
+  <h2>Announcements</h2>
+
+  <ul class="announcements">
+  <li class="announcement policy">
+    <h3>Annual leave guidance refreshed</h3>
+    <span class="announcement-date">24 Jan 2026</span>
+    <p>Clarified notice periods and manager approval process.</p>
+  </li>
+
+  <li class="announcement training">
+    <h3>Data Protection refresher due this month</h3>
+    <span class="announcement-date">20 Jan 2026</span>
+    <p>Please complete mandatory training by end of month.</p>
+  </li>
+
+  <li class="announcement wellbeing">
+    <h3>EAP support available 24/7</h3>
+    <span class="announcement-date">15 Jan 2026</span>
+    <p>Confidential support for employees and immediate family.</p>
+  </li>
+</ul>
+
+</section>
+
+<section class="card">
+  <h2>My Tasks</h2>
+
+  <ul class="task-list">
+  <li>
+    <label>
+      <input type="checkbox">
+      <span class="task-text">Complete Data Protection refresher</span>
+      <span class="task-meta">
+        <span class="pill pill-high">High</span>
+        <span class="pill">Due 31 Jan</span>
+      </span>
+    </label>
+  </li>
+  <li>
+    <label>
+      <input type="checkbox">
+      <span class="task-text">Review updated Annual Leave policy</span>
+      <span class="task-meta">
+        <span class="pill pill-med">Medium</span>
+        <span class="pill">Due 5 Feb</span>
+      </span>
+    </label>
+  </li>
+  <li>
+    <label>
+      <input type="checkbox">
+      <span class="task-text">Update emergency contact details</span>
+      <span class="task-meta">
+        <span class="pill pill-low">Low</span>
+        <span class="pill">No due date</span>
+      </span>
+    </label>
+  </li>
+</ul>
+</section>
 
     <section class="card">
       <h2>System Overview</h2>
@@ -75,40 +138,34 @@
       </section>
     </section>
 
-    <section class="grid-3">
-      <section class="card">
-        <h2>Quick Actions</h2>
-        <ul class="action-list">
-          <li><a class="link-row" href="info.html">View HR Policies</a></li>
-          <li><a class="link-row" href="info.html#benefits">Check Benefits</a></li>
-          <li><a class="link-row" href="contact.html">Submit an Enquiry</a></li>
-        </ul>
-      </section>
+   <section class="grid-2">
+  <section class="card">
+    <h2>Quick Actions</h2>
+    <ul class="action-list">
+      <li><a class="link-row" href="info.html#policies">View HR Policies</a></li>
+      <li><a class="link-row" href="info.html#benefits">Check Benefits</a></li>
+      <li><a class="link-row" href="contact.html">Submit an Enquiry</a></li>
+    </ul>
+    <p class="muted small">Common actions for employees.</p>
+  </section>
 
-      <section class="card">
-        <h2>Announcements</h2>
-        <ul class="plain-list">
-          <li><strong>Policy Update:</strong> Annual leave guidance refreshed.</li>
-          <li><strong>Training:</strong> Data protection refresher due this month.</li>
-          <li><strong>Wellbeing:</strong> EAP support available 24/7.</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h2>HR Contacts</h2>
-        <p class="muted">Typical response time: 2 working days.</p>
-        <ul class="plain-list">
-          <li><strong>HR Inbox:</strong> hr@company.example</li>
-          <li><strong>Office Hours:</strong> Mon–Fri, 9:00–17:00</li>
-        </ul>
-      </section>
-    </section>
+  <section class="card">
+    <h2>HR Contacts</h2>
+    <p class="muted">Typical response time: 2 working days.</p>
+    <ul class="plain-list">
+      <li><strong>HR Inbox:</strong> hr@company.example</li>
+      <li><strong>Office Hours:</strong> Mon–Fri, 9:00–17:00</li>
+    </ul>
+  </section>
+</section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2026 HRIS</p>
+      <p>&copy; 2026 HRIS — Static demonstration interface (HTML &amp; CSS only)</p>
     </div>
   </footer>
+
 </body>
 </html>
+
