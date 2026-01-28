@@ -35,27 +35,29 @@ body {
 
 
 
+
 /* ======================
    HEADER
 ====================== */
 .site-header {
   background: var(--brand-1);
   color: #fff;
-  padding: 0.75rem 0; /* slimmer header without shrinking text */
+  padding: 0.75rem 0; 
 }
 
 .header-inner {
   display: grid;
-  grid-template-columns: auto 1fr auto; /* logo | title | auth */
+  grid-template-columns: auto 1fr auto; 
   align-items: center;
   gap: 1rem;
 }
 
 /* Logo */
 .site-logo {
-  height: 120px;   /* make bigger/smaller here */
+  height: 140px; 
   width: auto;
   flex-shrink: 0;
+margin-left: -10px;
 }
 
 /* Title block */
@@ -165,17 +167,39 @@ main { padding-bottom: 1rem; }
   border: 1px solid rgba(0,0,0,0.04);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
   /* ======================
    ANNOUNCEMENTS (Homepage)
 ====================== */
 
-.announcements-card .announcements {
+  .announcements-card .announcements {
   max-height: 520px;          /* keeps column tidy */
   overflow-y: auto;
   padding-right: 0.25rem;     /* space for scrollbar */
 }
 
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
+
+.skill-list li {
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(59,130,246,0.1);
+  border: 1px solid rgba(59,130,246,0.25);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.profile-card{
+  border-left: 4px solid var(--brand-1);
+}
+
 
 .card:hover {
   transform: translateY(-2px);
@@ -411,14 +435,35 @@ th { background: #eef4fb; }
 .label { font-weight: bold; color: var(--muted); }
 .value { text-align: right; }
 
-/* Status pill */
+
+
+/* Status pills */
 .status-pill {
   padding: 0.35rem 0.7rem;
   border-radius: 999px;
-  font-weight: bold;
-  background: rgba(34,197,94,0.18);
-  border: 1px solid rgba(34,197,94,0.35);
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-block;
 }
+
+/* Completed (green) */
+.status-pill {
+  background: rgba(34,197,94,0.18);
+  border: 1px solid rgba(34,197,94,0.4);
+  color: #065f46;
+}
+
+/* Due / Expiring (red) */
+.status-due {
+  background: #fee2e2;
+  border: 1px solid #dc2626;
+  color: #7f1d1d;
+}
+
+.leave-actions{
+  margin-top: 1rem;
+}
+
 
 /* ======================
    CONTACT (search + form)
@@ -559,9 +604,6 @@ button:hover { opacity: 0.9; }
 @media (max-width: 700px) {
   .nav-list { flex-direction: column; }
   .site-logo { height: 96px; } /* shrink logo slightly on phones */
-}
-.page-intro{
-  background: linear-gradient(180deg, rgba(59,130,246,0.10), rgba(255,255,255,0.9));
 }
 .notice{
   padding: 0.6rem 0;
@@ -825,4 +867,15 @@ main{
 
 .on-this-page a:hover {
   background: rgba(59,130,246,0.1);
+}
+.policy-list li{
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.policy-list i{
+  color: var(--brand-1);
+  width: 18px;
+  text-align: center;
 }

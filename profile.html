@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HRIS | Profile</title>
+  <link rel="icon" href="favicon.png" type="image/png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,7 +13,7 @@
 <header class="site-header">
   <div class="container header-inner">
 
-    <img src="images/logo.png" alt="HRIS logo" class="site-logo">
+    <img src="assets/images/logo.png" alt="HRIS logo" class="site-logo">
 
     <div class="header-left">
       <h1>Human Resource Information System</h1>
@@ -52,11 +53,11 @@
 
   <section class="card">
     <h2>Employee Profile</h2>
-    <p class="muted">This section provides an overview of your role, areas of responsibility, and their qualifications relevant to your role.</p>
+    <p class="muted">This section provides an overview of your employee profile, including your role, key areas of responsibility, and the qualifications and experience relevant to your position.</p>
   </section>
 
   <section class="grid-2">
-    <section class="card">
+    <section class="card profile-card">
       <h3>Employee Details</h3>
       <ul class="detail-list">
         <li><span class="label">Name</span><span class="value">Ellie Robson</span></li>
@@ -64,10 +65,11 @@
         <li><span class="label">Department</span><span class="value">Human Resources</span></li>
         <li><span class="label">Employment Type</span><span class="value">Full-time</span></li>
         <li><span class="label">Status</span><span class="value">Active</span></li>
+        <li><span class="label">Salary</span><span class="value">£32,000</span></li>
       </ul>
     </section>
 
-    <section class="card">
+    <section class="card profile-card">
       <h3>Skills &amp; Training</h3>
       <ul>
         <li>HR onboarding procedures</li>
@@ -83,6 +85,7 @@
 
   <section class="card">
   <h3>Training Courses Status</h3>
+
   <table>
     <thead>
       <tr>
@@ -91,40 +94,55 @@
         <th>Due</th>
       </tr>
     </thead>
+
     <tbody>
       <tr>
         <td>Data Protection</td>
         <td><span class="status-pill">Completed</span></td>
         <td>Jan 2026</td>
       </tr>
+
       <tr>
         <td>Health &amp; Safety</td>
         <td><span class="status-pill">Completed</span></td>
         <td>Aug 2026</td>
       </tr>
+
       <tr>
         <td>Equality &amp; Diversity</td>
-        <td><span class="status-pill">Due</span></td>
+        <td><span class="status-pill status-due">Due</span>
         <td>Mar 2026</td>
       </tr>
     </tbody>
   </table>
 </section>
 <section class="card">
-  <h3>Leave Summary</h3>
+  <h3>Leave Summary for 2026</h3>
   <ul class="detail-list">
     <li><span class="label">Entitlement</span><span class="value">25 days</span></li>
     <li><span class="label">Taken</span><span class="value">10 days</span></li>
     <li><span class="label">Remaining</span><span class="value">15 days</span></li>
   </ul>
+  <div class="leave-actions">
+  <a href="#" class="btn">Submit Leave Request</a>
+</div>
+
+</section>
+<section class="card">
+  <h3>Emergency Contact</h3>
+  <ul class="detail-list">
+    <li><span class="label">Name</span><span class="value">James Robson</span></li>
+    <li><span class="label">Relationship</span><span class="value">Brother</span></li>
+    <li><span class="label">Phone</span><span class="value">07765488234</span></li>
+  </ul>
 </section>
 
-
+</section>
 </main>
 
 <footer class="site-footer">
   <div class="container">
-    <p>&copy; 2026 HRIS — Profile</p>
+    <p>&copy; 2026 HRIS — Designed and developed by Ellie.</p>
   </div>
 </footer>
 
