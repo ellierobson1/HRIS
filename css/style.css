@@ -1,4 +1,4 @@
-/*RESET + VARIABLES*/
+
 * { box-sizing: border-box; }
 
 :root {
@@ -47,8 +47,6 @@ body {
   align-items: center;
   gap: 1rem;
 }
-
-
 
 /*LOGO*/
 .site-logo {
